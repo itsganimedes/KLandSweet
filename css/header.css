@@ -162,6 +162,11 @@ header span {
         gap: 2rem;
     }
 
+    .floating-bg{
+        width: 90%;
+    }
+
+    
     header {
         width: 100%;
         margin-top: 2rem;
