@@ -1,5 +1,4 @@
 .header_nav {
-    height: 140vh;
     display: flex;
     flex-direction: column;
     gap: 4rem;
@@ -19,6 +18,7 @@ header {
     width: 60%;
     margin: 0 auto;
     margin-top: 4rem;
+    margin-bottom: 5rem;
     position: relative;
     z-index: 1;
 }
