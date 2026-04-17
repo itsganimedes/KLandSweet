@@ -19,6 +19,10 @@ html {
     color: gray;
 }
 
+.oculto{
+    display: none;
+}
+
 @media(max-width: 768px) {
     #content {
         padding: 0 1rem;

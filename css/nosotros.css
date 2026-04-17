@@ -1,0 +1,153 @@
+/* Variables de color basadas en tu estilo */
+:root {
+    --pink-main: #d33ee0;
+    --cookie-brown: #b1794f;
+    --soft-pink: #fff0fd;
+    --text-dark: #333;
+}
+
+/* Hero Section */
+.about-hero {
+    background-color: var(--soft-pink);
+    padding: 6rem 2rem;
+    text-align: center;
+    background-image: radial-gradient(var(--pink-main) 0.5px, transparent 0.5px);
+    background-size: 30px 30px;
+    opacity: 0.9;
+}
+
+.about-hero h1 {
+    font-size: 3.5rem;
+    color: var(--pink-main);
+    margin-bottom: 1rem;
+}
+
+.about-hero .subtitle {
+    font-size: 1.2rem;
+    color: var(--cookie-brown);
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Contenedor Principal */
+.about-container {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+}
+
+/* Grid de Imagen y Texto */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 50px 5px 50px 5px; /* Corte asimétrico estético */
+    box-shadow: 20px 20px 0px var(--soft-pink);
+    border: 2px solid var(--soft-pink);
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.about-text h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--pink-main);
+}
+
+.about-text p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Misión y Visión */
+.mission-vision {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.mv-card {
+    flex: 1;
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #eee;
+    transition: transform 0.3s ease;
+}
+
+.mv-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--pink-main);
+}
+
+.mv-card i {
+    font-size: 2.5rem;
+    color: var(--cookie-brown);
+    margin-bottom: 1.5rem;
+}
+
+.mv-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--pink-main);
+}
+
+.mv-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+span{
+    color: #d33ee0;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .about-image {
+        order: 2;
+    }
+
+    .about-text {
+        order: 1;
+        text-align: center;
+    }
+
+    .about-text h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .mission-vision {
+        flex-direction: column;
+    }
+
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+}

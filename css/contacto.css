@@ -1,0 +1,160 @@
+:root {
+    --pink-main: #d33ee0;
+    --cookie-brown: #b1794f;
+    --soft-pink: #fff0fd;
+    --text-dark: #333;
+}
+
+/* Hero de Contacto - Reutilizando estilo del extrapages */
+.contact-hero {
+    background-color: var(--soft-pink);
+    padding: 5rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.contact-hero h1 {
+    font-size: 3rem;
+    color: var(--pink-main);
+    margin-bottom: 0.5rem;
+}
+
+.contact-hero p {
+    color: var(--cookie-brown);
+    font-weight: 500;
+}
+
+/* Contenedor del Formulario y la Info */
+.contact-container {
+    max-width: 1100px;
+    margin: -3rem auto 5rem; /* Elevamos un poco la caja sobre el hero */
+    padding: 0 2rem;
+}
+
+.contact-wrapper {
+    display: flex;
+    background: white;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+    border: 1px solid #f0f0f0;
+}
+
+/* Lado izquierdo: Información */
+.contact-info {
+    flex: 1;
+    background-color: var(--pink-main);
+    color: white;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.info-item i {
+    font-size: 1.5rem;
+    color: var(--soft-pink);
+}
+
+.contact-socials {
+    margin-top: auto;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--soft-pink);
+    transform: scale(1.2);
+}
+
+/* Lado derecho: Formulario */
+.contact-form-box {
+    flex: 1.5;
+    padding: 4rem;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.input-group input, 
+.input-group select, 
+.input-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-group input:focus, 
+.input-group textarea:focus {
+    border-color: var(--pink-main);
+    box-shadow: 0 0 5px rgba(211, 62, 224, 0.2);
+}
+
+.btn-submit {
+    background-color: var(--cookie-brown);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-submit:hover {
+    background-color: var(--pink-main);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(211, 62, 224, 0.3);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .contact-wrapper {
+        flex-direction: column;
+    }
+    
+    .contact-info, .contact-form-box {
+        padding: 3rem 2rem;
+    }
+
+    .contact-container {
+        margin-top: 2rem;
+    }
+}
