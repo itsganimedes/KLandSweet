@@ -1,0 +1,144 @@
+.header_nav{
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin: 0 -2rem;
+    width: calc(100% + 4rem);
+    padding: 0 4rem;
+    color: rgb(41, 34, 41);
+    position: relative;
+}
+
+header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    position: relative;
+    z-index: 1;
+}
+
+header h1{
+    font-size: 4rem;
+}
+
+header p{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: rgb(75, 71, 71);
+}
+
+header span{
+    color: #d33ee0;
+}
+
+.floating-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.floating-item {
+    position: absolute;
+    font-size: 28px;
+    animation: floatDrift linear infinite;
+    opacity: 0.18;
+    user-select: none;
+}
+
+@keyframes floatDrift {
+    0%   { transform: translateY(0px) rotate(0deg); }
+    25%  { transform: translateY(-18px) rotate(8deg); }
+    50%  { transform: translateY(-8px) rotate(-4deg); }
+    75%  { transform: translateY(-22px) rotate(6deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.a_button{
+    font-size: 1.2rem;
+    padding: 0.8rem 2.5rem;
+    border-radius: 24px;
+    text-align: center;
+    color: #eee;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-decoration: none;
+}
+
+.a_buttons_section{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+.a_button.a_b_1{
+    background: #d33ee0;
+}
+
+.a_button.a_b_1:hover, .a_button.a_b_2:hover{
+    transform: scale(1.05);
+}
+
+.a_button.a_b_2{
+    border: 2px solid #923ee0;
+    color: #923ee0;
+}
+
+.a_button.a_b_2:hover{
+    background: #923ee0;
+    color: #eee;
+}
+
+.stats_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.stat{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.stat p{
+    font-size: 0.9rem;
+}
+
+.stat i{
+    font-size: 1.3rem;
+}
+
+.a_button_grande{
+    font-size: 1.2rem;
+    padding: 0.8rem 2.5rem;
+    border-radius: 24px;
+    text-align: center;
+    color: #eee;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.a_button_grande i{
+    font-size: 1.5rem;
+}
+
+.a_button_grande:hover{
+    transform: scale(1.04);
+}

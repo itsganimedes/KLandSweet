@@ -1,0 +1,71 @@
+.cookie_card{
+    width: 30%;
+    height: 30rem;
+    box-shadow: 0 4px 6px rgb(0,0,0,0.2);
+    border-radius: 14px;
+    padding: 2rem 1rem;
+    border: 1px solid #e19fe7;
+    position: relative;
+} 
+
+
+
+.cookie_card .img{
+    height: 60%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 -1rem;
+    width: calc(100% + 2rem);
+}
+
+.card_title{
+    color: rgb(41, 34, 41);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.card_price{
+    font-family: 'Inter', sans-serif;
+    color: #d33ee0;
+    font-size: 1.5rem;
+}
+
+.cookie_card_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 40%;
+    gap: 0.5rem;
+}
+
+.group_tag{
+    font-size: 0.9rem;
+    background: #d33ee0;
+    color: #eee;
+    padding: 0.2rem 1rem;
+    font-weight: bold;
+    width: fit-content;
+    border-radius: 12px;
+}
+
+.cookie_card:hover{
+    box-shadow: 0 14px 20px rgb(0,0,0,0.2);
+    border: 1px solid #8b2994;
+}
+
+.cookie_card:hover .img{
+    transform: scale(1.05);
+}
+
+.chosen_tag{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background: #923ee0;
+    color: #eee;
+    padding: 0.2rem 2rem;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
