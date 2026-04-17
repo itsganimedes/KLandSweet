@@ -154,13 +154,14 @@ header span {
 /* ── Móvil ── */
 @media(max-width: 768px) {
     .header_nav {
-        margin: 0 -1rem;
-        width: calc(100% + 2rem);
+        margin: 0rem;
+        width: 100%;
         padding: 0 1.5rem 4rem;
         height: auto;
         min-height: 40vh;
         gap: 2rem;
     }
+
     header {
         width: 100%;
         margin-top: 2rem;
