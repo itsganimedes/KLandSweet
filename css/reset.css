@@ -1,23 +1,26 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: 0.2s;
 }
-
-body{
+body {
     background: #f0e8f3;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
 }
-
-html{
+html {
     scroll-behavior: smooth;
 }
-
-#content{
+#content {
     padding: 0 2rem;
 }
-
-.desc{
+.desc {
     color: gray;
+}
+
+@media(max-width: 768px) {
+    #content {
+        padding: 0 1rem;
+    }
 }

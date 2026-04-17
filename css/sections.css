@@ -24,11 +24,12 @@ section{
 
 .sec_desc{
     color: rgb(97, 97, 97);
-    text-align: justify;
+    text-align: center;
 }
 
 .sec_desc.p1{
     width: 50%;
+    text-align: justify;
 }
 
 #general_catalogo{

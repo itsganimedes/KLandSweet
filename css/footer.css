@@ -1,4 +1,4 @@
-footer{
+footer {
     min-height: 18rem;
     background: 
         radial-gradient(ellipse at 20% 50%, rgba(211, 62, 224, 0.12) 0%, transparent 60%),
@@ -8,87 +8,11 @@ footer{
     position: relative;
     overflow: hidden;
     margin: 0 -2rem;
-    padding: 2rem 0;
+    padding: 2rem 4rem;   
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
-
-#footer_big_1{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-}
-
-#footer_big_2{
-    width: 100%;
-    border-top: 1px solid #eee;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: #b1b1b1;
-}
-
-.fot_desc{
-    color: #b9b9b9;
-}
-
-.footer_sec_1{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 50%;
-}
-
-.footer_sec_2{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    color: #eee;
-    gap: 3rem;
-}
-
-.social_media{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-
-.social_media i{
-    font-size: 1.5rem;
-    color: #eee;
-    background: #502e5c;
-    padding: 1rem;
-    border-radius: 50%;
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.f_column{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 50%;
-}
-
-.f_column a{
-    color: #eee;
-    text-decoration: none;
-}
-
-.f_column a:hover{
-    transform: translateY(-0.2rem);
-}
-
-.f_column b{
-    margin-bottom: 1rem;
-}
-
-/* Destellos estáticos con pseudo-elementos */
 footer::before {
     content: '';
     position: absolute;
@@ -109,14 +33,10 @@ footer::before {
     pointer-events: none;
     z-index: 0;
 }
-
-/* Línea de brillo superior */
 footer::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 0; left: 0; right: 0;
     height: 1px;
     background: linear-gradient(
         to right,
@@ -128,36 +48,113 @@ footer::after {
     );
     z-index: 1;
 }
-
 #footer_big_1,
 #footer_big_2 {
     position: relative;
     z-index: 2;
 }
+#footer_big_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    gap: 2rem;
+}
+#footer_big_2 {
+    width: 100%;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #b1b1b1;
+    font-size: 0.85rem;
+}
+.fot_desc {
+    color: #b9b9b9;
+}
+.footer_sec_1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 50%;
+}
+.footer_sec_2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    color: #eee;
+    gap: 3rem;
+}
+.social_media {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.social_media i {
+    font-size: 1.5rem;
+    color: #eee;
+    background: #502e5c;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social_media a {
+    text-decoration: none;
+}
+.f_column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+}
+.f_column a {
+    color: #eee;
+    text-decoration: none;
+}
+.f_column a:hover {
+    transform: translateY(-0.2rem);
+}
+.f_column b {
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
 
-@media(max-width: 1050px)
-{
-    footer{
-        margin: 0 -3rem;
+/* ── Tablet ── */
+@media(max-width: 1050px) {
+    footer {
+        margin: 0 -2rem;
+        padding: 2rem;
     }
-
-    #footer_big_1{
+    #footer_big_1 {
         flex-direction: column;
     }
-
-    #footer_big_2{
+    #footer_big_2 {
         flex-direction: column;
+        gap: 0.5rem;
         text-align: center;
     }
-
-    .footer_sec_1{
+    .footer_sec_1,
+    .footer_sec_2 {
         width: 100%;
     }
-    .footer_sec_2{
-        width: 100%;
-    }
+}
 
-    .footer_sec_1, .footer_sec_2{
-        padding: 4rem;
+/* ── Móvil ── */
+@media(max-width: 768px) {
+    footer {
+        margin: 0 -1rem;
+        padding: 2rem 1.5rem;
+    }
+    .footer_sec_2 {
+        flex-wrap: wrap;  
+        gap: 2rem;
+    }
+    .f_column {
+        width: 45%;     
     }
 }
