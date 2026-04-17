@@ -24,6 +24,11 @@ section{
 
 .sec_desc{
     color: rgb(97, 97, 97);
+    text-align: justify;
+}
+
+.sec_desc.p1{
+    width: 50%;
 }
 
 #general_catalogo{
@@ -34,4 +39,28 @@ section{
     gap: 2rem;
     flex-wrap: wrap;
     padding: 2rem 0;
+}
+
+@media(max-width: 1050px)
+{
+    section{
+        padding: 1rem;
+    }
+
+    #general_catalogo{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sec_desc.p1{
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px)
+{
+    .sec_header{
+        margin: 0;
+    }
 }

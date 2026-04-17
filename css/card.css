@@ -69,3 +69,17 @@
     border-radius: 12px;
     font-size: 0.9rem;
 }
+
+@media(max-width: 1050px)
+{
+    .cookie_card{
+        width: 80%;
+    }
+}
+
+@media(max-width: 768px)
+{
+    .cookie_card{
+        width: 100%;
+    }
+}

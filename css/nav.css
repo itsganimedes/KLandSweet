@@ -56,3 +56,16 @@ nav{
     display: flex;
     justify-content: flex-end;
 }
+
+@media(max-width: 1050px)
+{
+    nav{
+        flex-direction: column;
+        gap: 2rem;
+        margin: 0 -5rem;
+    }
+
+    .nav_3{
+        display: none;
+    }
+}

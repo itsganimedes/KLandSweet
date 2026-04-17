@@ -134,3 +134,30 @@ footer::after {
     position: relative;
     z-index: 2;
 }
+
+@media(max-width: 1050px)
+{
+    footer{
+        margin: 0 -3rem;
+    }
+
+    #footer_big_1{
+        flex-direction: column;
+    }
+
+    #footer_big_2{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer_sec_1{
+        width: 100%;
+    }
+    .footer_sec_2{
+        width: 100%;
+    }
+
+    .footer_sec_1, .footer_sec_2{
+        padding: 4rem;
+    }
+}
