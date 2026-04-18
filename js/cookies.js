@@ -6,7 +6,7 @@ const cookies = [
         title: 'Blue Hour',
         desc: 'Frutos rojos y un atractivo azul que atrapa a sus observadores.',
         price: '$ 4.000',
-        featured: true
+        featured: false
     },
     {
         id: 'mikrokosmos',
@@ -15,7 +15,7 @@ const cookies = [
         title: 'Mikrokosmos',
         desc: 'Chocolate blanco y estrellas más allá del universo observable.',
         price: '$ 3.571',
-        featured: false
+        featured: true
     },
     {
         id: 'sugandarina',
@@ -24,7 +24,7 @@ const cookies = [
         title: 'Sugandarina',
         desc: 'La naranja y el rap pueden combinarse mejor de lo que piensas.',
         price: '$ 3.571',
-        featured: false
+        featured: true
     },
     {
         id: 'felix_favs',
@@ -33,7 +33,7 @@ const cookies = [
         title: "Felix Fav's",
         desc: 'Combina la dulzura de Félix y la amargura del chocolate.',
         price: '$ 4.000',
-        featured: false
+        featured: true
     },
     {
         id: 'pink_venom',
@@ -60,7 +60,7 @@ const cookies = [
         title: 'Watch Me Go!',
         desc: 'La delicia de oreo junto al deleite de Cortis.',
         price: '$ 4.000',
-        featured: true
+        featured: false
     },
     {
         id: 'sugar_rush_ride',
@@ -100,11 +100,11 @@ const cookies = [
     },
     {
         id: 'karma',
-        img: 'img/Sugandarina.png',
+        img: 'img/Question.png',
         group: 'Stray Kids',
-        title: 'Karma',
+        title: 'Karma (PRÓXIMAMENTE)',
         desc: 'Rocklets y chocolate que por poco bailan solos.',
         price: '$ 4.000',
-        featured: true
-    },
+        featured: false
+    }
 ];
