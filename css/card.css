@@ -10,7 +10,6 @@
 } 
 
 
-
 .cookie_card .img{
     height: 60%;
     background-size: contain;
@@ -69,6 +68,23 @@
     text-align: center;
     border-radius: 12px;
     font-size: 0.9rem;
+}
+
+.card_price_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.card_price_old {
+    color: #aaa;
+    font-size: 0.95rem;
+    text-decoration: line-through;
+}
+
+.card_price_discount {
+    color: #d33ee0;  /* o el color que uses para precios normales */
 }
 
 @media(max-width: 1050px)

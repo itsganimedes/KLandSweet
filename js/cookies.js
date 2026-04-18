@@ -5,8 +5,9 @@ const cookies = [
         group: 'TXT',
         title: 'Blue Hour',
         desc: 'Frutos rojos y un atractivo azul que atrapa a sus observadores.',
-        price: '$ 4.000',
-        featured: false
+        price: 4000,
+        price_temporal: 0,
+        featured: false,
     },
     {
         id: 'mikrokosmos',
@@ -14,7 +15,8 @@ const cookies = [
         group: 'BTS',
         title: 'Mikrokosmos',
         desc: 'Chocolate blanco y estrellas más allá del universo observable.',
-        price: '$ 3.571',
+        price: 3571,
+        price_temporal: 2990,
         featured: true
     },
     {
@@ -23,7 +25,8 @@ const cookies = [
         group: 'BTS',
         title: 'Sugandarina',
         desc: 'La naranja y el rap pueden combinarse mejor de lo que piensas.',
-        price: '$ 3.571',
+        price: 3571,
+        price_temporal: 2990,
         featured: true
     },
     {
@@ -32,7 +35,8 @@ const cookies = [
         group: 'Stray Kids',
         title: "Felix Fav's",
         desc: 'Combina la dulzura de Félix y la amargura del chocolate.',
-        price: '$ 4.000',
+        price: 4000,
+        price_temporal: 3400,  // ← ejemplo con descuento
         featured: true
     },
     {
@@ -41,7 +45,8 @@ const cookies = [
         group: 'Blackpink',
         title: 'Pink Venom',
         desc: 'Chocolate rosa, brillo y malvaviscos. unidos por un hit coreano.',
-        price: '$ 3.571',
+        price: 3571,
+        price_temporal: 0,
         featured: false
     },
     {
@@ -50,7 +55,8 @@ const cookies = [
         group: 'Cortis',
         title: 'Cortis Ball',
         desc: 'Unas hojitas de menta con chocolate y buena música. Planazo.',
-        price: '$ 4.000',
+        price: 4000,
+        price_temporal: 0,
         featured: false
     },
     {
@@ -59,7 +65,8 @@ const cookies = [
         group: 'Cortis',
         title: 'Watch Me Go!',
         desc: 'La delicia de oreo junto al deleite de Cortis.',
-        price: '$ 4.000',
+        price: 4000,
+        price_temporal: 0,
         featured: false
     },
     {
@@ -68,7 +75,8 @@ const cookies = [
         group: 'TXT',
         title: 'Sugar Rush Ride',
         desc: 'Banana, frutilla y esponjosidad.',
-        price: '$ 3.571',
+        price: 3571,
+        price_temporal: 0,
         featured: false
     },
     {
@@ -77,7 +85,8 @@ const cookies = [
         group: 'Blackpink',
         title: 'Boombayah',
         desc: 'Vainilla, manteca, rosa y negro formando una pieza única y deliciosa.',
-        price: '$ 3.571',
+        price: 3571,
+        price_temporal: 2990,
         featured: true
     },
     {
@@ -86,7 +95,8 @@ const cookies = [
         group: 'Twice',
         title: 'Funfetty',
         desc: 'Sabores magneticos como un imán oriental.',
-        price: '$ 3.571',
+        price: 3571,
+        price_temporal: 0,
         featured: false
     },
     {
@@ -95,7 +105,8 @@ const cookies = [
         group: 'ENHYPEN',
         title: 'Dark Blood',
         desc: 'Red Velvet con un rojo dulce y único.',
-        price: '$ 3.571',
+        price: 3571,
+        price_temporal: 0,
         featured: false
     },
     {
@@ -104,7 +115,8 @@ const cookies = [
         group: 'Stray Kids',
         title: 'Karma (PRÓXIMAMENTE)',
         desc: 'Rocklets y chocolate que por poco bailan solos.',
-        price: '$ 4.000',
+        price: 4000,
+        price_temporal: 0,
         featured: false
     }
 ];
