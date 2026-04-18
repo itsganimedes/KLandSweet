@@ -12,9 +12,6 @@ nav{
     background: white;
 }
 
-.nav_1, .nav_2, .nav_3 {
-    flex: 1;
-}
 
 .logo_text{
     display: flex;

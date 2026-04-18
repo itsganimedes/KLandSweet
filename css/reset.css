@@ -19,8 +19,24 @@ html {
     color: gray;
 }
 
+.logo{
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../img/logos/LOGOS-04.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .oculto{
     display: none;
+}
+
+@media(max-width: 1050px) {
+    .logo{
+        width: 10rem;
+        height: 10rem;
+    }
 }
 
 @media(max-width: 768px) {
