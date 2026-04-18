@@ -38,9 +38,3 @@ html {
         height: 10rem;
     }
 }
-
-@media(max-width: 768px) {
-    #content {
-        padding: 0 1rem;
-    }
-}
