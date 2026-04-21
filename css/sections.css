@@ -42,6 +42,89 @@ section{
     padding: 2rem 0;
 }
 
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    padding: 1rem 0;
+}
+
+.info-card {
+    background: #ffffff;
+    border: 0.5px solid rgba(0,0,0,0.12);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    text-align: left;
+}
+
+.card-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0 0 6px;
+}
+
+.card-desc {
+    font-size: 13px;
+    color: #666;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.pill-row {
+    display: flex;
+    gap: 8px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+}
+
+.pill {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 99px;
+}
+
+.pill-purple { background: #EEEDFE; color: #3C3489; }
+.pill-teal   { background: #E1F5EE; color: #0F6E56; }
+
+.day-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.day-card {
+    border: 0.5px solid rgba(0,0,0,0.12);
+    border-radius: 8px;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.day-name {
+    font-size: 13px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0 0 2px;
+}
+
+.day-sub {
+    font-size: 11px;
+    color: #999;
+    margin: 0;
+}
+
 @media(max-width: 1050px)
 {
     section{
