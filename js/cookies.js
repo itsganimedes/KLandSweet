@@ -111,7 +111,7 @@ const cookies = [
     },
     {
         id: 'karma',
-        img: 'img/Question.png',
+        img: 'img/question.png',
         group: 'Stray Kids',
         title: 'Karma (PRÓXIMAMENTE)',
         desc: 'Rocklets y chocolate que por poco bailan solos.',
