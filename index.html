@@ -64,6 +64,24 @@
             </header>
         </div>
 
+        <div class="cd-wrap">
+            <p class="cd-label-top"><span class="cd-dot"></span>próxima semana</p>
+            <p class="cd-title">Próxima rotación de galletas en</p>
+            <div class="cd-grid">
+                <div class="cd-block"><div class="cd-num" id="cd-days">00</div><div class="cd-unit">días</div></div>
+                <div class="cd-block"><div class="cd-num" id="cd-hours">00</div><div class="cd-unit">horas</div></div>
+                <div class="cd-block"><div class="cd-num" id="cd-mins">00</div><div class="cd-unit">minutos</div></div>
+                <div class="cd-block"><div class="cd-num" id="cd-secs">00</div><div class="cd-unit">segundos</div></div>
+            </div>
+            <div class="cd-bar-wrap">
+                <div class="cd-bar-label">
+                <span id="cd-bar-pct-left">0% transcurrido</span>
+                <span id="cd-date-target"></span>
+                </div>
+                <div class="cd-bar-track"><div class="cd-bar-fill" id="cd-bar" style="width:0%"></div></div>
+            </div>
+        </div>
+
         <main>
             <section id="productos">
                 <div class="sec_header">
@@ -180,5 +198,6 @@
     <script src="js/background.js"></script>
     <script src="js/cookies.js"></script>
     <script src="js/render.js"></script>
+    <script src="js/clock.js"></script>
 </body>
 </html>

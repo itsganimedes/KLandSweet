@@ -125,6 +125,27 @@ section{
     margin: 0;
 }
 
+
+
+/* RELOJ */
+
+
+.cd-wrap { padding: 2rem 0; text-align: center; }
+.cd-label-top { font-size: 12px; letter-spacing: 0.12em; color: #999; text-transform: uppercase; margin-bottom: 0.5rem; }
+.cd-title { font-size: 18px; font-weight: 500; color: #1a1a1a; margin-bottom: 2rem; }
+.cd-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; max-width: 480px; margin: 0 auto 2rem; }
+.cd-block { background: #fff; border: 0.5px solid rgba(0,0,0,0.12); border-radius: 12px; padding: 1.25rem 0.5rem 1rem; }
+.cd-num { font-size: 36px; font-weight: 500; color: #1a1a1a; line-height: 1; font-variant-numeric: tabular-nums; }
+.cd-unit { font-size: 11px; color: #aaa; margin-top: 6px; letter-spacing: 0.08em; text-transform: uppercase; }
+.cd-bar-wrap { max-width: 480px; margin: 0 auto; }
+.cd-bar-label { display: flex; justify-content: space-between; font-size: 12px; color: #aaa; margin-bottom: 6px; }
+.cd-bar-track { height: 4px; background: #f0f0f0; border-radius: 99px; overflow: hidden; }
+.cd-bar-fill { height: 4px; background: #D4537E; border-radius: 99px; transition: width 1s linear; }
+.cd-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #D4537E; margin-right: 6px; vertical-align: middle; }
+
+
+
+
 @media(max-width: 1050px)
 {
     section{
