@@ -33,7 +33,7 @@ const cookies = [
         id: 'felix_favs',
         img: 'img/felix_favs.png',
         group: 'Stray Kids',
-        title: "Felix Fav's",
+        title: "Felix's Fav",
         desc: 'Combina la dulzura de Félix y la amargura del chocolate.',
         price: 4000,
         price_temporal: 3400,  // ← ejemplo con descuento
