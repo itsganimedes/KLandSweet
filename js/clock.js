@@ -1,10 +1,12 @@
+// 0 domingo
+
 function getNextMonday() {
     const now = new Date();
     const d = new Date(now);
     const day = d.getDay();
-    const daysUntil = day === 0 ? 1 : (8 - day) % 7 || 7;
+    const daysUntil = (5 - day + 7) % 7 || 7;
     d.setDate(d.getDate() + daysUntil);
-    d.setHours(0, 0, 0, 0);
+    d.setHours(10, 0, 0, 0);
     return d;
 }
 
@@ -40,9 +42,9 @@ function tick() {
     document.getElementById('cd-bar').style.width = pct + '%';
     document.getElementById('cd-bar-pct-left').textContent = pct + '% transcurrido';
 
-    const opts = { weekday: 'long', day: 'numeric', month: 'short' };
-    document.getElementById('cd-date-target').textContent =
-        target.toLocaleDateString('es-AR', opts);
+    const opts = { weekday: 'long', day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' };
+        document.getElementById('cd-date-target').textContent =
+        target.toLocaleString('es-AR', opts);
 }
 
 tick();
