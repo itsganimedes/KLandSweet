@@ -6,8 +6,8 @@ const cookies = [
         title: 'Blue Hour',
         desc: 'Frutos rojos y un atractivo azul que atrapa a sus observadores.',
         price: 4000,
-        price_temporal: 0,
-        featured: false,
+        price_temporal: 3790,
+        featured: true,
     },
     {
         id: 'mikrokosmos',
@@ -16,8 +16,8 @@ const cookies = [
         title: 'Mikrokosmos',
         desc: 'Chocolate blanco y estrellas más allá del universo observable.',
         price: 3571,
-        price_temporal: 2990,
-        featured: true
+        price_temporal: 0,
+        featured: false
     },
     {
         id: 'sugandarina',
@@ -26,8 +26,8 @@ const cookies = [
         title: 'Sugandarina',
         desc: 'La naranja y el rap pueden combinarse mejor de lo que piensas.',
         price: 3571,
-        price_temporal: 2990,
-        featured: true
+        price_temporal: 0,
+        featured: false
     },
     {
         id: 'felix_favs',
@@ -36,8 +36,8 @@ const cookies = [
         title: "Felix's Fav",
         desc: 'Combina la dulzura de Félix y la amargura del chocolate.',
         price: 4000,
-        price_temporal: 3400,  // ← ejemplo con descuento
-        featured: true
+        price_temporal: 0,
+        featured: false
     },
     {
         id: 'pink_venom',
@@ -47,17 +47,17 @@ const cookies = [
         desc: 'Chocolate rosa, brillo y malvaviscos. unidos por un hit coreano.',
         price: 3571,
         price_temporal: 0,
-        featured: false
+        featured: true
     },
     {
         id: 'cortis_ball',
-        img: 'img/cortis_ball.png',
+        img: 'img/real_cortis_ball.png',
         group: 'Cortis',
         title: 'Cortis Ball',
         desc: 'Unas hojitas de menta con chocolate y buena música. Planazo.',
         price: 4000,
         price_temporal: 0,
-        featured: false
+        featured: true
     },
     {
         id: 'go_cortis',
@@ -67,7 +67,7 @@ const cookies = [
         desc: 'La delicia de oreo junto al deleite de Cortis.',
         price: 4000,
         price_temporal: 0,
-        featured: false
+        featured: true
     },
     {
         id: 'sugar_rush_ride',
@@ -86,8 +86,8 @@ const cookies = [
         title: 'Boombayah',
         desc: 'Vainilla, manteca, rosa y negro formando una pieza única y deliciosa.',
         price: 3571,
-        price_temporal: 2990,
-        featured: true
+        price_temporal: 0,
+        featured: false
     },
     {
         id: 'magnetic',
