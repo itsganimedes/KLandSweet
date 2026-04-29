@@ -5,8 +5,8 @@ const cookies = [
         group: 'TXT',
         title: 'Blue Hour',
         desc: 'Frutos rojos y un atractivo azul que atrapa a sus observadores.',
-        price: 4214,
-        price_temporal: 4000,
+        price: 4750,
+        price_temporal: 4199,
         featured: true,
     },
     {
