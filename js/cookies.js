@@ -6,8 +6,8 @@ const cookies = [
         title: 'Blue Hour',
         desc: 'Frutos rojos y un atractivo azul que atrapa a sus observadores.',
         price: 4750,
-        price_temporal: 4199,
-        featured: true,
+        price_temporal: 0,
+        featured: false,
     },
     {
         id: 'mikrokosmos',
@@ -47,7 +47,7 @@ const cookies = [
         desc: 'Chocolate rosa, brillo y malvaviscos. unidos por un hit coreano.',
         price: 4214,
         price_temporal: 0,
-        featured: true
+        featured: false
     },
     {
         id: 'cortis_ball',
@@ -57,7 +57,7 @@ const cookies = [
         desc: 'Unas hojitas de menta con chocolate y buena música. Planazo.',
         price: 4750,
         price_temporal: 0,
-        featured: true
+        featured: false
     },
     {
         id: 'go_cortis',
@@ -67,7 +67,7 @@ const cookies = [
         desc: 'La delicia de oreo junto al deleite de Cortis.',
         price: 4750,
         price_temporal: 0,
-        featured: true
+        featured: false
     },
     {
         id: 'sugar_rush_ride',
@@ -77,7 +77,7 @@ const cookies = [
         desc: 'Banana, frutilla y esponjosidad.',
         price: 4071,
         price_temporal: 0,
-        featured: false
+        featured: true
     },
     {
         id: 'esencia',
@@ -97,7 +97,7 @@ const cookies = [
         desc: 'Sabores magneticos como un imán oriental.',
         price: 4071,
         price_temporal: 0,
-        featured: false
+        featured: true
     },
     {
         id: 'dark_blood',
@@ -107,16 +107,16 @@ const cookies = [
         desc: 'Red Velvet con un rojo dulce y único.',
         price: 4214,
         price_temporal: 0,
-        featured: false
+        featured: true
     },
     {
         id: 'karma',
-        img: 'img/question.png',
+        img: 'img/karma.png',
         group: 'Stray Kids',
-        title: 'Karma (PRÓXIMAMENTE)',
+        title: 'Karma',
         desc: 'Rocklets y chocolate que por poco bailan solos.',
         price: 4750,
         price_temporal: 0,
-        featured: false
+        featured: true
     }
 ];
